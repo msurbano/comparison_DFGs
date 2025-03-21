@@ -19,6 +19,7 @@ def search_differences(keys):
                 # 'Difference in frequency': "(none)"
             }
     col1.markdown(small_text(explanations[search]), unsafe_allow_html=True)
+    add = False
 
     # color_selectbox(2, 'green')
 
@@ -45,6 +46,7 @@ def search_differences(keys):
     elif(search == 'Stable parts'):
         mode = col12.selectbox('Reference model', ['Whole process'] + list(keys))
         values = []
+       
         # color_mode = col2.multiselect('Highlight', ['Similarities', 'Differences DFG', 'Differences reference model'], 
         #                               placeholder='Choose some options')
         if(mode=='Whole process'):
@@ -53,6 +55,8 @@ def search_differences(keys):
         else:
             color_mode = col2.multiselect('Highlight', ['Similarities', 'Differences DFG', 'Differences reference model'], 
                                       placeholder='Choose some options')
+            if('Similarities' in color_mode and 'Differences DFG' in color_mode and 'Differences reference model' in color_mode):
+                add = col3.checkbox('Show the activities of the whole process')
         #     color_mode = col2.radio('Highlight', ['Differences', 'Similarities', 'Similarities and differences'], horizontal=True)
         #     explanations = {
         #         'Similarities': "For each DFG, highlight the nodes and transitions that are included in the reference model.",
@@ -75,7 +79,7 @@ def search_differences(keys):
         color_mode=False
     
 
-    return (search, (mode,values), color_mode)
+    return (search, (mode,values), color_mode, add)
 
 def zoom_fragment(col1, dic):
     df = st.session_state.original

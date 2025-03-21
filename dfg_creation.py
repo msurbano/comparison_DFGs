@@ -1025,6 +1025,7 @@ def graphviz_visualization_stable_parts(key, tupla, delete_act, activities_count
     # st.write(key)
     reference = tupla[1][0]
     mode = tupla[2]
+    add = tupla[3]
 
     order_list='false'
     if start_activities is None:
@@ -1214,10 +1215,20 @@ def graphviz_visualization_stable_parts(key, tupla, delete_act, activities_count
                     font_color = '#808080'
                     color_node='#808080'
             else:
-                font_color='#FFFFFF'
-                style='invis'
-                fillcolor='#FFFFFF'
-                color_node='#FFFFFF'
+                if(add==False):
+                    text = ''
+                    node_shape='plaintext'
+                    font_color='#FFFFFF'
+                    style='invis'
+                    fill_color='#FFFFFF'
+                    color_node='#FFFFFF'
+                else:
+                    text = act
+                    font_color=gris_oscuro
+                    node_shape='plaintext'
+                    style = 'filled'
+                    fill_color='white'
+                    color_node='#FFFFFF'
 
             viz.node(str(hash(act)), text, style=style, fontcolor=font_color, fillcolor=fill_color, 
                      fontsize=font_size, shape=node_shape, color=color_node)
@@ -1433,17 +1444,26 @@ def graphviz_visualization_stable_parts(key, tupla, delete_act, activities_count
                     else:
                         color_edge = gris_medio
                 else:
-                    width= ''
-                    color_edge='#FFFFFF'
-                    font_color='#FFFFFF'
-                    style='invis'
-                    label = ''
+                    if(add==False):
+                        width= ''
+                        color_edge='#FFFFFF'
+                        font_color='#FFFFFF'
+                        style='invis'
+                        label = ''
+                    else:
+                        width= ''
+                        color_edge=gris_medio
+                        font_color='#FFFFFF'
+                        style='dashed'
+                        label = ''
             else:
                 width= ''
                 color_edge='#FFFFFF'
                 font_color='#FFFFFF'
                 style='invis'
                 label = ''
+                
+
                 # viz.edge(str(hash(edge[0])), str(hash(edge[1])), label='', fontsize=font_size, 
                 # color='grey', fontcolor='grey')
 
@@ -1666,8 +1686,12 @@ def graphviz_visualization_stable_parts(key, tupla, delete_act, activities_count
                         color_edge='green'
                         style='dashed'
                     else:
-                        color_edge=gris_medio
-                        style='invis'
+                        if(add==False):
+                            color_edge=gris_medio
+                            style='invis'
+                        else:
+                            color_edge = gris_medio
+                            style = 'dashed'
                 viz.edge("@@startnode", activities_map[act], label=label, fontsize=font_size, color=color_edge, style=style)
         else:
             viz.node("@@startnode", "<&#9679;>", style='invis')
@@ -1875,8 +1899,12 @@ def graphviz_visualization_stable_parts(key, tupla, delete_act, activities_count
                         color_edge='#f0512f'
                         style='dashed'
                     else:
-                        color_edge=gris_medio
-                        style='invis'
+                        if(add==False):
+                            color_edge=gris_medio
+                            style='invis'
+                        else:
+                            color_edge = gris_medio
+                            style = 'dashed'
                 viz.edge(activities_map[act], "@@endnode", label=label, fontsize=font_size, color=color_edge, style=style)
         else:
             viz.node("@@endnode", "<&#9632;>", style='invis')
