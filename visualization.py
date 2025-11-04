@@ -10,7 +10,7 @@ def search_differences(keys):
     df = st.session_state.original
     
     col11, col12 = col1.columns(2)
-    search = col11.selectbox('Search for', ('Existence of activities', 'Identify control-flow differences'))
+    search = col11.selectbox('Action', ('Existence of activities', 'Identify control-flow differences'))
                             # 'Difference in frequency','Other'))
     if(search=='Identify control-flow differences'):
        search='Stable parts'
@@ -141,6 +141,7 @@ def filter_events(dic, act):
     
 
     
+
 
 
 
