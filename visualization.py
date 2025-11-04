@@ -91,7 +91,9 @@ def zoom_fragment(col1, dic):
     # col1, col2, col3, col4 = st.columns(4)
 
 
-    z = col1.selectbox('Visualization focus', ('Whole process','Zoom subprocess'))
+    z = col1.selectbox('Fragment focusing', ('Whole process','Select fragment'))
+    if(z=='Select fragment'):
+        z='Zoom subprocess'
     col11, col12 = col1.columns(2)
     if(z=='Zoom subprocess'):
 
@@ -119,7 +121,7 @@ def zoom_fragment(col1, dic):
 def show_activities(col2, df):
     delete_act = set()
     # col1, col2, col3, col4 = st.columns(4)
-    z = col2.selectbox('Visualization of activities', ('All activities', 'Hide activities', 'Filter events by activities'), key='act_delete')
+    z = col2.selectbox('Activity hiding', ('All activities', 'Hide activities', 'Filter events by activities'), key='act_delete')
     if(z=='Hide activities'):
         delete_act = col2.multiselect('Activities to hide', df['concept:name'].unique(), label_visibility="hidden", key='delete')
     # elif(z=='Filter events by activities'):
@@ -143,6 +145,7 @@ def filter_events(dic, act):
     
 
     
+
 
 
 
