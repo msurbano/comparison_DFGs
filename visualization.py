@@ -12,10 +12,8 @@ def search_differences(keys):
     col11, col12 = col1.columns(2)
     search = col11.selectbox('Search for', ('Existence of activities', 'Identify control-flow differences'))
                             # 'Difference in frequency','Other'))
-    if(search=='Identify control-flow differences):
+    if(search=='Identify control-flow differences'):
        search='Stable parts'
-    else:
-        search=search
     
     explanations = {
                 'Existence of activities': "Highlight a set of activities that are fully ('All included') or partially ('Some included') included in the DFGs.",
@@ -143,5 +141,6 @@ def filter_events(dic, act):
     
 
     
+
 
 
