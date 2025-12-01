@@ -10,18 +10,23 @@ def search_differences(keys):
     df = st.session_state.original
     
     col11, col12 = col1.columns(2)
-    search = col11.selectbox('Action', ('Identify the existence of activities', 'Identify control-flow differences'))
-                            # 'Difference in frequency','Other'))
-    if(search=='Identify control-flow differences'):
-       search='Stable parts'
-    else:
-        search='Existence of activities'
     
+    # search = col11.selectbox('Action', ('Identify the existence of activities', 'Identify control-flow differences'))
+    #                         # 'Difference in frequency','Other'))
+
+    # if(search=='Identify control-flow differences'):
+    #    search='Stable parts'
+    # else:
+    #     search='Existence of activities'
+
+    search = col11.selectbox('Action', ('Identify shared control-flow elements', 'Identify exclusive control-flow elements', 'Identify missing control-flow elements))
+                                        
     explanations = {
-                'Existence of activities': "Highlight a set of activities that are fully ('All included') or partially ('Some included') included in the DFGs.",
-                'Stable parts': "Highlight common nodes and edges between DFGs using a reference model, which could be the entire process or a DFG from the collection.",
-                # 'Difference in frequency': "(none)"
+                'Identify shared control-flow elements': "Highlight common nodes and edges between DFGs using a reference model, which could be the entire process or a DFG from the collection.",
+                'Identify exclusive control-flow elements': "Highlight exclusive nodes and edges between DFGs using a reference model, which could be the entire process or a DFG from the collection.",
+                'Identify missing control-flow elements': "Highlight missing nodes and edges between DFGs using a reference model, which could be the entire process or a DFG from the collection."
             }
+    
     col1.markdown(small_text(explanations[search]), unsafe_allow_html=True)
     add = False
 
@@ -46,37 +51,46 @@ def search_differences(keys):
             values = values = col2.multiselect('Nodes', df['concept:name'].unique(), label_visibility="hidden")
         color_mode=False
 
+    # elif(search == 'Stable parts'):
+    #     mode = col12.selectbox('Reference model', ['Whole process'] + list(keys))
+    #     values = []
+    #     if(mode=='Whole process'):
+    #         color_mode = col2.multiselect('Highlight', ['Similarities',  'Differences reference model'], 
+    #                                   placeholder='Choose some options')
+    #     else:
+    #         color_mode = col2.multiselect('Highlight', ['Similarities', 'Differences DFG', 'Differences reference model'], 
+    #                                   placeholder='Choose some options')
+    #         if('Similarities' in color_mode and 'Differences DFG' in color_mode and 'Differences reference model' in color_mode):
+    #             add = col3.checkbox('Show the activities of the whole process')
 
-    elif(search == 'Stable parts'):
+
+    elif(search == 'Identify shared control-flow elements'):
         mode = col12.selectbox('Reference model', ['Whole process'] + list(keys))
         values = []
-       
-        # color_mode = col2.multiselect('Highlight', ['Similarities', 'Differences DFG', 'Differences reference model'], 
-        #                               placeholder='Choose some options')
         if(mode=='Whole process'):
-            color_mode = col2.multiselect('Highlight', ['Similarities',  'Differences reference model'], 
-                                      placeholder='Choose some options')
+            color_mode = 'Similarities'
         else:
-            color_mode = col2.multiselect('Highlight', ['Similarities', 'Differences DFG', 'Differences reference model'], 
-                                      placeholder='Choose some options')
-            if('Similarities' in color_mode and 'Differences DFG' in color_mode and 'Differences reference model' in color_mode):
-                add = col3.checkbox('Show the activities of the whole process')
-        #     color_mode = col2.radio('Highlight', ['Differences', 'Similarities', 'Similarities and differences'], horizontal=True)
-        #     explanations = {
-        #         'Similarities': "For each DFG, highlight the nodes and transitions that are included in the reference model.",
-        #         'Differences': "For each DFG, highlight the nodes and transitions that are not included in the reference model.",
-        #         'Similarities and differences': "The nodes and edges that belong only to the DFG are highlighted in yellow. Those common to both the DFG and "
-        #         "the reference are in orange. The ones exclusive to the reference DFG are in red, while those that do not belong to "
-        #         "either are shown in gray."
-        #     }
-        #     col2.markdown(small_text(explanations[color_mode]), unsafe_allow_html=True)
-        # else:
-        #     color_mode=col2.radio('Highlight', ['Same color', 'Freq. color'], horizontal=True)
-        #     explanations = {
-        #         'Same color': "Use only one color for the activities included in the DFG.",
-        #         'Freq. color': "Use different colors according to the frequency of the activities included in the DFG.",
-        #     }
-        #     col2.markdown(small_text(explanations[color_mode]), unsafe_allow_html=True)
+            color_mode = 'Similarities'
+        search = 'Stable parts'
+        
+    elif(search == 'Identify exclusive control-flow elements'):
+        mode = col12.selectbox('Reference model', ['Whole process'] + list(keys))
+        values = []
+        if(mode=='Whole process'):
+            color_mode = ''
+        else:
+            color_mode = 'Differences DFG'
+        search = 'Stable parts'
+        
+    elif(search == 'Identify missing control-flow elements'):
+        mode = col12.selectbox('Reference model', ['Whole process'] + list(keys))
+        values = []
+        if(mode=='Whole process'):
+            color_mode = 'Differences reference model'
+        else:
+            color_mode = 'Differences reference model'
+        search = 'Stable parts'
+# )
     else:
         values = []
         mode=''
@@ -145,6 +159,7 @@ def filter_events(dic, act):
     
 
     
+
 
 
 
