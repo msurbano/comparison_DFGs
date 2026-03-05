@@ -1113,6 +1113,7 @@ def graphviz_visualization_stable_parts(key, tupla, delete_act, activities_count
                 else:
                     fill_color=activities_color[act]
                     color_node='black'
+                    font_color = 'black'
             else:
                 text = act
                 # node_shape= 'box'
@@ -2188,3 +2189,4 @@ def show_DFGs(stats_list, order, metric):
         st.write(stat['svg_path'])
 
         st.markdown("""---""")
+
