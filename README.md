@@ -15,4 +15,4 @@ To run the tool locally, follow these steps:
 
 ## Access via Web
 
-It is available at [https://viscopro.streamlit.app/.](https://comparisondfgs.streamlit.app/)
+It is available at [https://comparisondfgs.streamlit.app/]
