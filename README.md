@@ -14,4 +14,4 @@ To run the tool locally, follow these steps:
 `python -m streamlit run 1_Data_Context.py`
 
 
-Supplemental materials are avilable in https://zenodo.org/records/19140302
+Supplemental materials are available in https://zenodo.org/records/19140302
