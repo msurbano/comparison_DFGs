@@ -13,6 +13,4 @@ To run the tool locally, follow these steps:
 5. Run the following command to launch the application:
 `python -m streamlit run 1_Data_Context.py`
 
-## Access via Web
 
-It is available at https://comparisondfgs.streamlit.app/
