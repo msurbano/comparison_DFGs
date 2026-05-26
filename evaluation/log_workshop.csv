@@ -1,0 +1,82 @@
+id,org:resource,concept:name,time:timestamp,org:role,case:Permit OrganizationalEntity,case:concept:name
+rv_travel permit 23991_6,STAFF MEMBER,Start trip,2017-12-03 00:00:00+00:00,EMPLOYEE,organizational unit 65465,declaration 23993
+st_step 8505_0,STAFF MEMBER,Permit APPROVED by BUDGET OWNER,2018-01-16 11:57:25+00:00,BUDGET OWNER,organizational unit 65465,declaration 8502
+rv_travel permit 8498_6,STAFF MEMBER,Start trip,2018-02-22 00:00:00+00:00,EMPLOYEE,organizational unit 65465,declaration 8502
+st_step 8518_0,STAFF MEMBER,Declaration REJECTED by EMPLOYEE,2018-03-07 13:43:40+00:00,EMPLOYEE,organizational unit 65465,declaration 8502
+st_step 8513_0,STAFF MEMBER,Declaration APPROVED by BUDGET OWNER,2018-03-07 14:21:23+00:00,BUDGET OWNER,organizational unit 65465,declaration 8502
+rv_travel permit 31682_6,STAFF MEMBER,Start trip,2018-02-19 00:00:00+00:00,EMPLOYEE,organizational unit 65471,declaration 31684
+st_step 31692_0,STAFF MEMBER,Declaration REJECTED by EMPLOYEE,2018-04-06 11:41:34+00:00,EMPLOYEE,organizational unit 65471,declaration 31684
+rv_travel permit 2764_6,STAFF MEMBER,Start trip,2018-03-19 00:00:00+00:00,EMPLOYEE,organizational unit 65471,declaration 2767
+rv_travel permit 8207_6,STAFF MEMBER,Start trip,2018-03-20 00:00:00+00:00,EMPLOYEE,organizational unit 65471,declaration 8209
+st_step 8217_0,STAFF MEMBER,Declaration REJECTED by EMPLOYEE,2018-04-06 11:27:47+00:00,EMPLOYEE,organizational unit 65471,declaration 8209
+st_step 22473_0,STAFF MEMBER,Permit APPROVED by BUDGET OWNER,2018-02-02 09:51:07+00:00,BUDGET OWNER,organizational unit 65471,declaration 22470
+rv_travel permit 22467_6,STAFF MEMBER,Start trip,2018-02-15 00:00:00+00:00,EMPLOYEE,organizational unit 65471,declaration 22470
+st_step 22480_0,STAFF MEMBER,Declaration REJECTED by EMPLOYEE,2018-03-14 08:34:40+00:00,EMPLOYEE,organizational unit 65471,declaration 22470
+st_step 22477_0,STAFF MEMBER,Declaration APPROVED by BUDGET OWNER,2018-03-19 07:41:50+00:00,BUDGET OWNER,organizational unit 65471,declaration 22470
+rv_travel permit 56494_6,STAFF MEMBER,Start trip,2018-04-07 00:00:00+00:00,EMPLOYEE,organizational unit 65482,declaration 56496
+st_step 56506_0,STAFF MEMBER,Declaration REJECTED by EMPLOYEE,2018-04-25 10:53:44+00:00,EMPLOYEE,organizational unit 65482,declaration 56496
+rv_travel permit 14630_6,STAFF MEMBER,Start trip,2018-06-03 00:00:00+00:00,EMPLOYEE,organizational unit 65465,declaration 14632
+rv_travel permit 5662_6,STAFF MEMBER,Start trip,2018-06-13 00:00:00+00:00,EMPLOYEE,organizational unit 65465,declaration 5665
+st_step 5673_0,STAFF MEMBER,Declaration REJECTED by EMPLOYEE,2018-06-19 08:55:44+00:00,EMPLOYEE,organizational unit 65465,declaration 5665
+rv_travel permit 64704_6,STAFF MEMBER,Start trip,2018-06-13 00:00:00+00:00,EMPLOYEE,organizational unit 65465,declaration 64706
+st_step 64715_0,STAFF MEMBER,Declaration REJECTED by EMPLOYEE,2018-06-19 08:55:56+00:00,EMPLOYEE,organizational unit 65465,declaration 64706
+rv_travel permit 41361_6,STAFF MEMBER,Start trip,2018-04-08 00:00:00+00:00,EMPLOYEE,organizational unit 65471,declaration 41363
+rv_travel permit 31138_6,STAFF MEMBER,Start trip,2018-05-22 00:00:00+00:00,EMPLOYEE,organizational unit 65471,declaration 31142
+st_step 31150_0,STAFF MEMBER,Declaration APPROVED by BUDGET OWNER,2018-06-20 15:45:00+00:00,BUDGET OWNER,organizational unit 65471,declaration 31142
+rv_travel permit 54777_6,STAFF MEMBER,Start trip,2018-06-24 00:00:00+00:00,EMPLOYEE,organizational unit 65477,declaration 54779
+rv_travel permit 54777_27,SYSTEM,Send Reminder,2018-08-01 06:00:25+00:00,UNDEFINED,organizational unit 65477,declaration 54779
+rv_travel permit 26411_6,STAFF MEMBER,Start trip,2018-04-17 00:00:00+00:00,EMPLOYEE,organizational unit 65477,declaration 26413
+rv_travel permit 26411_27,SYSTEM,Send Reminder,2018-06-01 06:00:34+00:00,UNDEFINED,organizational unit 65477,declaration 26413
+st_step 26423_0,STAFF MEMBER,Declaration REJECTED by EMPLOYEE,2018-06-08 11:30:37+00:00,EMPLOYEE,organizational unit 65477,declaration 26413
+rv_travel permit 37926_6,STAFF MEMBER,Start trip,2018-06-03 00:00:00+00:00,EMPLOYEE,organizational unit 65482,declaration 37928
+rv_travel permit 61159_6,STAFF MEMBER,Start trip,2018-10-08 00:00:00+00:00,EMPLOYEE,organizational unit 65484,declaration 61162
+rv_travel permit 66298_6,STAFF MEMBER,Start trip,2018-07-28 00:00:00+00:00,EMPLOYEE,organizational unit 65468,declaration 66301
+st_step 66310_0,STAFF MEMBER,Declaration REJECTED by EMPLOYEE,2018-09-24 11:08:37+00:00,EMPLOYEE,organizational unit 65468,declaration 66301
+rv_travel permit 66364_6,STAFF MEMBER,Start trip,2018-07-12 00:00:00+00:00,EMPLOYEE,organizational unit 65468,declaration 66366
+rv_travel permit 11545_6,STAFF MEMBER,Start trip,2018-07-16 00:00:00+00:00,EMPLOYEE,organizational unit 65468,declaration 11548
+st_step 62095_0,STAFF MEMBER,Permit REJECTED by SUPERVISOR,2018-07-17 09:38:36+00:00,SUPERVISOR,organizational unit 65482,declaration 62087
+st_step 62094_0,STAFF MEMBER,Permit REJECTED by EMPLOYEE,2018-07-18 00:58:13+00:00,EMPLOYEE,organizational unit 65482,declaration 62087
+st_step 62092_0,STAFF MEMBER,Permit APPROVED by SUPERVISOR,2018-07-19 08:43:36+00:00,SUPERVISOR,organizational unit 65482,declaration 62087
+st_step 62091_0,STAFF MEMBER,Permit FINAL_APPROVED by DIRECTOR,2018-07-19 12:11:16+00:00,DIRECTOR,organizational unit 65482,declaration 62087
+rv_travel permit 62085_6,STAFF MEMBER,Start trip,2018-09-04 00:00:00+00:00,EMPLOYEE,organizational unit 65482,declaration 62087
+st_step 62104_0,STAFF MEMBER,Declaration REJECTED by EMPLOYEE,2018-12-11 09:10:57+00:00,EMPLOYEE,organizational unit 65482,declaration 62087
+st_step 62100_0,STAFF MEMBER,Declaration REJECTED by EMPLOYEE,2018-12-13 16:07:31+00:00,EMPLOYEE,organizational unit 65482,declaration 62087
+rv_travel permit 66915_6,STAFF MEMBER,Start trip,2018-10-30 00:00:00+00:00,EMPLOYEE,organizational unit 65484,declaration 66919
+st_step 34092_0,STAFF MEMBER,Permit APPROVED by BUDGET OWNER,2018-07-16 15:03:09+00:00,BUDGET OWNER,organizational unit 65477,declaration 34090
+rv_travel permit 34085_6,STAFF MEMBER,Start trip,2018-09-26 00:00:00+00:00,EMPLOYEE,organizational unit 65477,declaration 34090
+st_step 34103_0,STAFF MEMBER,Declaration APPROVED by BUDGET OWNER,2018-10-08 15:56:54+00:00,BUDGET OWNER,organizational unit 65477,declaration 34090
+rv_travel permit 62136_6,STAFF MEMBER,Start trip,2018-09-18 00:00:00+00:00,EMPLOYEE,organizational unit 65465,declaration 62138
+st_step 63510_0,STAFF MEMBER,Permit APPROVED by SUPERVISOR,2018-08-03 10:34:49+00:00,SUPERVISOR,organizational unit 65482,declaration 63508
+st_step 63511_0,STAFF MEMBER,Permit FINAL_APPROVED by DIRECTOR,2018-08-07 16:23:23+00:00,DIRECTOR,organizational unit 65482,declaration 63508
+rv_travel permit 63506_6,STAFF MEMBER,Start trip,2018-08-28 00:00:00+00:00,EMPLOYEE,organizational unit 65482,declaration 63508
+rv_travel permit 58034_6,STAFF MEMBER,Start trip,2018-08-10 00:00:00+00:00,EMPLOYEE,organizational unit 65468,declaration 58036
+rv_travel permit 58853_6,STAFF MEMBER,Start trip,2018-08-10 00:00:00+00:00,EMPLOYEE,organizational unit 65468,declaration 58859
+st_step 58870_0,STAFF MEMBER,Declaration REJECTED by EMPLOYEE,2018-09-04 13:28:43+00:00,EMPLOYEE,organizational unit 65468,declaration 58859
+rv_travel permit 58853_6,STAFF MEMBER,Start trip,2018-08-10 00:00:00+00:00,EMPLOYEE,organizational unit 65468,declaration 58857
+rv_travel permit 58853_6,STAFF MEMBER,Start trip,2018-08-10 00:00:00+00:00,EMPLOYEE,organizational unit 65468,declaration 58855
+st_step 16917_0,STAFF MEMBER,Permit APPROVED by BUDGET OWNER,2018-08-29 16:29:49+00:00,BUDGET OWNER,organizational unit 65468,declaration 16915
+rv_travel permit 16912_6,STAFF MEMBER,Start trip,2018-11-17 00:00:00+00:00,EMPLOYEE,organizational unit 65468,declaration 16915
+st_step 16924_0,STAFF MEMBER,Declaration APPROVED by BUDGET OWNER,2018-11-27 17:02:17+00:00,BUDGET OWNER,organizational unit 65468,declaration 16915
+st_step 35425_0,STAFF MEMBER,Permit APPROVED by BUDGET OWNER,2018-10-01 10:29:53+00:00,BUDGET OWNER,organizational unit 65465,declaration 35419
+st_step 35424_0,STAFF MEMBER,Permit APPROVED by SUPERVISOR,2018-10-02 08:39:35+00:00,SUPERVISOR,organizational unit 65465,declaration 35419
+st_step 35423_0,STAFF MEMBER,Permit FINAL_APPROVED by DIRECTOR,2018-10-04 14:43:36+00:00,DIRECTOR,organizational unit 65465,declaration 35419
+rv_travel permit 35417_6,STAFF MEMBER,Start trip,2018-11-04 00:00:00+00:00,EMPLOYEE,organizational unit 65465,declaration 35419
+st_step 35428_0,STAFF MEMBER,Declaration APPROVED by BUDGET OWNER,2018-11-27 15:01:55+00:00,BUDGET OWNER,organizational unit 65465,declaration 35419
+rv_travel permit 34413_6,STAFF MEMBER,Start trip,2018-11-08 00:00:00+00:00,EMPLOYEE,organizational unit 65465,declaration 34415
+rv_travel permit 48164_6,STAFF MEMBER,Start trip,2019-01-07 00:00:00+00:00,EMPLOYEE,organizational unit 65477,declaration 48166
+rv_travel permit 34235_6,STAFF MEMBER,Start trip,2018-11-11 00:00:00+00:00,EMPLOYEE,organizational unit 65468,declaration 34237
+rv_travel permit 34235_6,STAFF MEMBER,Start trip,2018-11-11 00:00:00+00:00,EMPLOYEE,organizational unit 65468,declaration 34241
+rv_travel permit 34235_6,STAFF MEMBER,Start trip,2018-11-11 00:00:00+00:00,EMPLOYEE,organizational unit 65468,declaration 34239
+rv_travel permit 49937_6,STAFF MEMBER,Start trip,2018-11-24 00:00:00+00:00,EMPLOYEE,organizational unit 65468,declaration 49943
+rv_travel permit 49937_6,STAFF MEMBER,Start trip,2018-11-24 00:00:00+00:00,EMPLOYEE,organizational unit 65468,declaration 49944
+rv_travel permit 50141_6,STAFF MEMBER,Start trip,2018-11-27 00:00:00+00:00,EMPLOYEE,organizational unit 65482,declaration 50143
+st_step 47792_0,STAFF MEMBER,Permit APPROVED by SUPERVISOR,2018-11-14 16:26:02+00:00,SUPERVISOR,organizational unit 65471,declaration 47787
+st_step 47791_0,STAFF MEMBER,Permit FINAL_APPROVED by DIRECTOR,2018-11-14 16:35:33+00:00,DIRECTOR,organizational unit 65471,declaration 47787
+rv_travel permit 47785_6,STAFF MEMBER,Start trip,2018-11-28 00:00:00+00:00,EMPLOYEE,organizational unit 65471,declaration 47787
+rv_travel permit 47823_6,STAFF MEMBER,Start trip,2018-11-20 00:00:00+00:00,EMPLOYEE,organizational unit 65482,declaration 47826
+rv_travel permit 48434_6,STAFF MEMBER,Start trip,2018-11-20 00:00:00+00:00,EMPLOYEE,organizational unit 65482,declaration 48436
+st_step 29800_0,STAFF MEMBER,Permit APPROVED by BUDGET OWNER,2018-11-22 12:49:41+00:00,BUDGET OWNER,organizational unit 65484,declaration 29797
+st_step 29799_0,STAFF MEMBER,Permit APPROVED by SUPERVISOR,2018-11-23 14:50:28+00:00,SUPERVISOR,organizational unit 65484,declaration 29797
+rv_travel permit 29794_6,STAFF MEMBER,Start trip,2018-11-28 00:00:00+00:00,EMPLOYEE,organizational unit 65484,declaration 29797
+st_step 29802_0,STAFF MEMBER,Permit FINAL_APPROVED by DIRECTOR,2018-11-28 14:18:38+00:00,DIRECTOR,organizational unit 65484,declaration 29797
+st_step 29806_0,STAFF MEMBER,Declaration APPROVED by BUDGET OWNER,2018-12-13 08:44:19+00:00,BUDGET OWNER,organizational unit 65484,declaration 29797
