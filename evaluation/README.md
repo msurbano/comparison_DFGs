@@ -13,11 +13,11 @@ A PDF document containing:
 - the analysis tasks performed during the evaluation sessions,
 - and the questionnaires used to collect participant feedback.
 
-### DFGs Used During the Workshop
-A ZIP file containing the Directly-Follows Graphs (DFGs) generated and discussed during the workshops. These visualizations were used by participants to explore similarities and differences between process variants and to provide qualitative feedback on the proposed comparison strategies and interaction mechanisms.
+### Workshop Results
+A folder containing the Directly-Follows Graphs (DFGs) generated and discussed during the workshops. These visualizations were used by participants to explore similarities and differences between process variants and to provide qualitative feedback on the proposed comparison strategies and interaction mechanisms. They are classified by analytical task.
 
-### Event Log
-The event log used during the workshops and evaluation sessions to generate the process variants and corresponding DFGs analyzed with the prototype.
+### Event Log Workshop
+The event log used during the workshops to generate the process variants and corresponding DFGs analyzed with the prototype.
 
 ## Purpose
 
