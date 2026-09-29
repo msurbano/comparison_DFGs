@@ -48,21 +48,45 @@ def calculate_average_cycle_time(df):
     
     return f"{avg_time:.2f} {unit}"
 
-def mean_case(df):
-    avg_seconds = sum(pm4py.stats.get_all_case_durations(df))/ len(pm4py.stats.get_all_case_durations(df)) 
+# def mean_case(df):
+#     avg_seconds = sum(pm4py.stats.get_all_case_durations(df))/ len(pm4py.stats.get_all_case_durations(df)) 
     
-    # Determinar la unidad más apropiada
-    if avg_seconds < 3600:  # Menos de 1 hora -> minutos
+#     # Determinar la unidad más apropiada
+#     if avg_seconds < 3600:  # Menos de 1 hora -> minutos
+#         avg_time = avg_seconds / 60
+#         unit = "min"
+#     elif avg_seconds < 86400:  # Menos de 1 día -> horas
+#         avg_time = avg_seconds / 3600
+#         unit = "h"
+#     else:  # 1 día o más -> días
+#         avg_time = avg_seconds / 86400
+#         unit = "d"
+    
+#     return round(avg_time, 1), unit
+
+def mean_case(df):
+
+    cycle_times = df.groupby("case:concept:name").agg(
+        start_time=("time:timestamp", "min"),
+        end_time=("time:timestamp", "max")
+    )
+
+    avg_seconds = (
+        cycle_times["end_time"] - cycle_times["start_time"]
+    ).dt.total_seconds().mean()
+
+    if avg_seconds < 3600:
         avg_time = avg_seconds / 60
         unit = "min"
-    elif avg_seconds < 86400:  # Menos de 1 día -> horas
+    elif avg_seconds < 86400:
         avg_time = avg_seconds / 3600
         unit = "h"
-    else:  # 1 día o más -> días
+    else:
         avg_time = avg_seconds / 86400
         unit = "d"
-    
+
     return round(avg_time, 1), unit
+    
 
 def median_case(df):
     avg_seconds = statistics.median(pm4py.get_all_case_durations(df))
